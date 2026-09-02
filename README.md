@@ -4,6 +4,12 @@ This repository contains the software and documentation for my Autonomous RF Sig
 
 The goal of the project was to develop a quadcopter capable of autonomously searching an area for an unknown RF transmitter using RSSI (Received Signal Strength Indicator) measurements. The drone communicates with a Pixhawk flight controller through MAVLink, follows a predefined search pattern, detects when the RF signal exceeds a threshold, collects additional RSSI measurements around the detected area, estimates the transmitter location, and then returns to its starting position.
 
+Media and Demonstration:
+
+Videos and photos from the project are included in the Media section of this repository. One video demonstrates the drone completing the autonomous zigzag search pattern, while another shows the complete RF detection sequence: the drone first performs the zigzag search, detects when the RSSI value passes the set threshold, and then transitions into the circular sampling mode to collect additional signal measurements.
+The estimated RF source location obtained from the collected RSSI measurements is also shown in the Media section, with additional results and explanation included in the project report.
+
+
 The system integrates:
 
 Pixhawk 2.4.8 running ArduCopter for flight control
